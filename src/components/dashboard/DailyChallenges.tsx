@@ -12,7 +12,7 @@ const challenges = [
     points: 50,
     difficulty: "easy" as const,
     location: "Recreation Center",
-    href: "https://p4rths1105.github.io/chai-adda-game/",
+    href: "https://github.com/Tanishkka27/campus-adventures-unlocked",
   },
   {
     id: 2,
@@ -63,7 +63,7 @@ export function DailyChallenges() {
             points={challenge.points}
             difficulty={challenge.difficulty}
             location={challenge.location}
-            onStart={() => console.log(`Starting challenge: ${challenge.title}`)}
+            onStart={() => window.open(challenge.href, '_blank')}
           />
         ))}
       </div>
