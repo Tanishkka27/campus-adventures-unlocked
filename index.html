@@ -1,24 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CampusQuest - AI Campus Adventure Game</title>
-    <meta name="description" content="Explore your campus through AI-generated trivia, challenges, and puzzles. Gamify your campus experience with points, achievements, and social features." />
-    <meta name="author" content="CampusQuest" />
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chai Adda Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="gameCanvas"></canvas>
+<div id="ui">Score: 0</div>
+<div id="levelInfo">Level: 1 | Target: 100</div>
 
-    <meta property="og:title" content="CampusQuest - AI Campus Adventure Game" />
-    <meta property="og:description" content="Explore your campus through AI-generated trivia, challenges, and puzzles. Gamify your campus experience with points, achievements, and social features." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+<div id="welcomeMsg">Welcome to Chai Adda!</div>
+<button id="startBtn" class="button">Start Game</button>
+<button id="backMapBtn" class="button">Back to Map</button>
+<button id="retryBtn" class="button">Retry</button>
+<button id="nextLevelBtn" class="button">Next Level</button>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
-
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<script src="game.js"></script>
+</body>
 </html>
+
