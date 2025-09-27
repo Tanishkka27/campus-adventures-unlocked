@@ -12,7 +12,7 @@ const challenges = [
     points: 50,
     difficulty: "easy" as const,
     location: "Recreation Center",
-    href: "https://github.com/Tanishkka27/campus-adventures-unlocked",
+    href: "https://p4rths1105.github.io/chai-adda-game/",
   },
   {
     id: 2,
