@@ -1,22 +1,25 @@
 import { SectionCard } from "@/components/ui/section-card";
 import { Card, CardContent } from "@/components/ui/card";
 import { Map, Trophy, Award } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export function QuickActions() {
+  const navigate = useNavigate();
+
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
       <SectionCard
         title="Explore Campus"
         subtitle="Find and complete new challenges"
         icon={Map}
-        onClick={() => console.log("Navigate to campus map")}
+        onClick={() => navigate("/map")}
       />
       
       <SectionCard
         title="View Leaderboard"
         subtitle="See how you rank against others"
         icon={Trophy}
-        onClick={() => console.log("Navigate to leaderboard")}
+        onClick={() => navigate("/leaderboard")}
       />
       
       <div className="lg:col-span-2">

@@ -24,10 +24,10 @@ const App = () => (
             <div className="flex min-h-screen w-full bg-background">
               <AppSidebar />
               <main className="flex-1 overflow-hidden">
-                <header className="sticky top-0 z-10 flex h-16 items-center gap-4 border-b border-border bg-background/80 backdrop-blur-sm px-6">
-                  <SidebarTrigger className="lg:hidden" />
+                <header className="sticky top-0 z-10 flex h-14 sm:h-16 items-center gap-4 border-b border-border bg-background/80 backdrop-blur-sm px-4 sm:px-6">
+                  <SidebarTrigger className="-ml-1" />
                 </header>
-                <div className="overflow-y-auto h-[calc(100vh-4rem)]">
+                <div className="overflow-y-auto h-[calc(100vh-3.5rem)] sm:h-[calc(100vh-4rem)]">
                   <Routes>
                     <Route path="/" element={<Dashboard />} />
                     <Route path="/map" element={<CampusMap />} />

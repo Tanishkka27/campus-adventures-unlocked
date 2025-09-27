@@ -39,16 +39,16 @@ export function StatCard({
       variants[variant],
       className
     )}>
-      <CardContent className="p-6">
+      <CardContent className="p-4 sm:p-6">
         <div className="flex items-center justify-between">
-          <div className="space-y-1">
-            <p className="text-sm font-medium text-muted-foreground">{title}</p>
-            <p className="text-2xl font-bold text-foreground">{value}</p>
+          <div className="space-y-1 min-w-0 flex-1">
+            <p className="text-xs sm:text-sm font-medium text-muted-foreground truncate">{title}</p>
+            <p className="text-lg sm:text-2xl font-bold text-foreground">{value}</p>
             {subtitle && (
-              <p className="text-xs text-muted-foreground">{subtitle}</p>
+              <p className="text-xs text-muted-foreground truncate">{subtitle}</p>
             )}
           </div>
-          <Icon className={cn("h-8 w-8", iconVariants[variant])} />
+          <Icon className={cn("h-6 w-6 sm:h-8 sm:w-8 flex-shrink-0 ml-2", iconVariants[variant])} />
         </div>
       </CardContent>
     </Card>
