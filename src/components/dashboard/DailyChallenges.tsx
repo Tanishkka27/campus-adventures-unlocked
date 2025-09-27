@@ -16,21 +16,21 @@ const challenges = [
   },
   {
     id: 2,
-    title: "Chess",
-    description: "Test your knowledge about the library's resources",
+    title: "Riddle",
+    description: "Test your knowledge about the classroom resources",
     points: 80,
     difficulty: "medium" as const,
-    location: "Learners Arena",
+    location: "Block A",
     href: "https://tanishkka27.github.io/Riddle/",
   },
   {
     id: 3,
-    title: "Dorm Life Mystery",
-    description: "A riddle about residence hall living",
+    title: "Chess",
+    description: "Test your knowledge about the sports resources",
     points: 70,
     difficulty: "medium" as const,
-    location: "Residence Halls",
-    href: "/challenges/3",
+    location: "Learners Arena",
+    href: "https://tanishkka27.github.io/Chess/",
   },
 ];
 
