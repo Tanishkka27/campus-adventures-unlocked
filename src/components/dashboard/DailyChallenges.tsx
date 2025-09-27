@@ -2,15 +2,17 @@ import { ChallengeCard } from "@/components/ui/challenge-card";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const challenges = [
   {
     id: 1,
-    title: "Cardio Machine Mystery",
+    title: "Chaiadda Adventure",
     description: "Figure out which cardio equipment is being described",
     points: 50,
     difficulty: "easy" as const,
     location: "Recreation Center",
+    href: "https://p4rths1105.github.io/chai-adda-game/",
   },
   {
     id: 2,
@@ -19,6 +21,7 @@ const challenges = [
     points: 80,
     difficulty: "medium" as const,
     location: "Main Library",
+    href: "/challenges/2",
   },
   {
     id: 3,
@@ -27,6 +30,7 @@ const challenges = [
     points: 70,
     difficulty: "medium" as const,
     location: "Residence Halls",
+    href: "/challenges/3",
   },
 ];
 
