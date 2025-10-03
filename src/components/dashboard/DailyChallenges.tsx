@@ -2,7 +2,6 @@ import { ChallengeCard } from "@/components/ui/challenge-card";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock } from "lucide-react";
-import { useRouter } from "next/navigation";
 
 const challenges = [
   {
